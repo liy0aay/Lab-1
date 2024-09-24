@@ -10,7 +10,8 @@ END = '\u001b[0m'
         print(f'{BLUE}{"  " * (12 - 2 * i)}{RED}{"  " * (4 + 2 * i)}{END}')'''
 
 
-plot_list = [[0 for i in range(10)] for i in range(10)]
+plot_list = [[0 for i in range(10)] for i in range(10)] #new_message
+
 result = [0 for i in range(10)]
 
 for i in range(10):
