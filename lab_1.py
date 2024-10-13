@@ -1,8 +1,12 @@
+import os
+import time
 from decimal import Decimal
 
 RED = '\u001b[41m'
 BLUE = '\u001b[44m'
 WHITE = '\u001b[47m'
+PINK = '\u001b[48;5;225m'
+PEACH = '\u001b[48;5;216m'
 END = '\u001b[0m'
 
 
@@ -77,6 +81,25 @@ def count_seq():
                 )
 
 
+
+# def animation():             # Допзадание анимация
+#     tabul = "\t"
+#     shots = []
+#     for i in range (10,1, -1):
+#         shots += [f"{PEACH}(つ✧ω✧)つ{i*tabul}{PINK}(•ᴥ• )́`́’́`́’⻍'{END}"]
+#     for i in range (10):
+#         shots += [f"{tabul*i}༼ つ ◕_◕ ༽つヽ༼ຈل͜ຈ༽ﾉ{END}"]
+
+
+#     while True: 
+#         for shot in shots:                         
+#             os.system("clear")
+#             print (shot)
+#             time.sleep(0.5)
+#         time.sleep(1)
+#     return 0
+
+
 if __name__ == "__main__":
     draw_flag()
   
@@ -88,5 +111,7 @@ if __name__ == "__main__":
     draw_plot()
     
     count_seq()
+
+    #animation()
 
 
